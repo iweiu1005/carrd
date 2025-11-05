@@ -31,7 +31,7 @@ a {
 }
 
 .card {
-    --card-width: 340px;
+    --card-width: 390px;
     --teeth: 20;
     --height: 15px;
     width: var(--card-width);
