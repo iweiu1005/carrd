@@ -18,6 +18,7 @@ body {
 
 p {
     font-size: 12px;
+    text-align: justify;
 }
 a {
     text-decoration: none;
@@ -146,11 +147,11 @@ hr {
 }
 
 .item-left {
-    width: 60%;
+    width: 45%;
 }
 
 .item-right {
-    width: 40%;
+    width: 55%;
 }
 
 .item-text {
@@ -233,9 +234,9 @@ hr {
 .signature-barcode {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    align-items: flex-end;
+    justify-content: space-around;
     margin-top: 16px;
+    margin-bottom: 15px;
 }
 
 .signature-img {
@@ -260,6 +261,23 @@ hr {
     top: 339px;
     width: 207px;
 }
+.btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+a.req-btn {
+    background: #f0f0f0;
+    color: #8d8d8d;
+    padding: 5px 22px;
+}
+a.req-btn:hover {
+    background: #a1a1aa;
+    color: #ffffff;
+}
+
 
 @media (max-width: 720px) {
     .card {
