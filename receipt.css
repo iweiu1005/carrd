@@ -248,6 +248,7 @@ hr {
     width: 110px;
     height: auto;
     margin-bottom: 4px;
+    mix-blend-mode: multiply;
 }
 
 .barcode-img {
