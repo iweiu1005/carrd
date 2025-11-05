@@ -32,7 +32,7 @@
                 <div class="order-left">
                     <p>
                         Order: #10001 <br />
-                        Date: 2025.11.05
+                        Date: 2025.10.05
                     </p>
                 </div>
                 <div class="website"><a href="/">carrd.ir</a></div>
@@ -71,5 +71,20 @@
                 <img src="/files/teddy/brcode.jpg" alt="Barcode" class="barcode-img" />
             </div>
         </div>
+        <script>
+    // تاریخ امروز را تنظیم می‌کند
+    document.addEventListener('DOMContentLoaded', function() {
+        const today = new Date();
+        const formattedDate = today.getFullYear() + '.' + 
+                             String(today.getMonth() + 1).padStart(2, '0') + '.' + 
+                             String(today.getDate()).padStart(2, '0');
+        
+        // پیدا کردن المان تاریخ و به‌روزرسانی آن
+        const dateElement = document.querySelector('.order-left p');
+        if (dateElement) {
+            dateElement.innerHTML = `Order: #10001 <br />Date: ${formattedDate}`;
+        }
+    });
+</script>
     </body>
 </html>
