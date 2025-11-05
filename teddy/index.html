@@ -28,10 +28,8 @@
             <hr />
             <div class="order-info">
                 <div class="order-left">
-                    <p>
-                        Order: #10001 <br />
-                        Date: 2025.10.05
-                    </p>
+                    <p>Order: #10001 </p>
+                <p class="Datep">Date: 2025.10.05</p>
                 </div>
                 <div class="website"><a href="/">carrd.ir</a></div>
             </div>
@@ -74,9 +72,9 @@
                 const today = new Date();
                 const formattedDate = today.getFullYear() + "." + String(today.getMonth() + 1).padStart(2, "0") + "." + String(today.getDate()).padStart(2, "0");
 
-                const dateElement = document.querySelector(".order-left p");
+                const dateElement = document.querySelector(".Datep");
                 if (dateElement) {
-                    dateElement.innerHTML = `Order: #10001 <br />Date: ${formattedDate}`;
+                    dateElement.innerHTML = `Date: ${formattedDate}`;
                 }
             });
         </script>
