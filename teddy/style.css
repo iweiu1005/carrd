@@ -250,16 +250,6 @@ hr {
     vertical-align: bottom;
 }
 
-.stamp {
-    mix-blend-mode: multiply;
-    position: absolute;
-    z-index: 2;
-    rotate: -12deg;
-    right: 278px;
-    top: 339px;
-    width: 207px;
-}
-
 @media (max-width: 720px) {
     .card {
         max-width: 100%;
@@ -267,11 +257,5 @@ hr {
 
     body {
         padding: 16px;
-    }
-
-    .stamp {
-        right: 5vw;
-        top: 55vh;
-        width: 30%;
     }
 }
