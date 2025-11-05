@@ -259,6 +259,22 @@ hr {
     top: 339px;
     width: 207px;
 }
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+a.req-btn {
+    background: #f0f0f0;
+    color: #8d8d8d;
+    padding: 5px 22px;
+}
+a.req-btn:hover {
+    background: #a1a1aa;
+    color: #ffffff;
+}
+
 
 @media (max-width: 720px) {
     .card {
