@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -18,11 +17,10 @@
         <!-- Style Link -->
         <link rel="stylesheet" href="style.css" />
 
-       <!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
     </head>
     <body>
         <div class="card">
@@ -72,19 +70,15 @@
             </div>
         </div>
         <script>
-    // تاریخ امروز را تنظیم می‌کند
-    document.addEventListener('DOMContentLoaded', function() {
-        const today = new Date();
-        const formattedDate = today.getFullYear() + '.' + 
-                             String(today.getMonth() + 1).padStart(2, '0') + '.' + 
-                             String(today.getDate()).padStart(2, '0');
-        
-        // پیدا کردن المان تاریخ و به‌روزرسانی آن
-        const dateElement = document.querySelector('.order-left p');
-        if (dateElement) {
-            dateElement.innerHTML = `Order: #10001 <br />Date: ${formattedDate}`;
-        }
-    });
-</script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const today = new Date();
+                const formattedDate = today.getFullYear() + "." + String(today.getMonth() + 1).padStart(2, "0") + "." + String(today.getDate()).padStart(2, "0");
+
+                const dateElement = document.querySelector(".order-left p");
+                if (dateElement) {
+                    dateElement.innerHTML = `Order: #10001 <br />Date: ${formattedDate}`;
+                }
+            });
+        </script>
     </body>
 </html>
