@@ -34,7 +34,7 @@ a {
     padding: 24px;
     margin: auto;
     animation: fadePop 0.6s ease-out forwards;
-    background-image: url(https://uploadkon.ir/uploads/3f6a05_256af0e1385af67fc9efc73b60aa22b5ab0.jpg);
+    background-image: url(/files/main/texture.jpg);
     position: relative;
     overflow: hidden;
     clip-path: polygon(
