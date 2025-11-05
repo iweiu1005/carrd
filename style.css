@@ -234,7 +234,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-items: flex-end;
     margin-top: 16px;
 }
 
