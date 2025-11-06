@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        function getSubdomain() {
+            const hostname = window.location.hostname;
+            const parts = hostname.split('.');
+            
+            if (parts.length >= 3 && parts[0] !== 'www' && parts[0] !== 'carrd') {
+                return parts[0];
+            }
+            return null;
+        }
+
+        function redirectToPage() {
+            const subdomain = getSubdomain();
+            const basePath = '/pages';
+            
+            if (subdomain) {
+                // هدایت به صفحه ساب دامنه
+                window.location.href = `${basePath}/${subdomain}/index.html`;
+            } else {
+                // اگر ساب دامنه نبود، به صفحه اصلی هدایت شود
+                window.location.href = '/index.html';
+            }
+        }
+
+        window.addEventListener('load', redirectToPage);
+    </script>
+</head>
+<body>
+    <p>در حال هدایت...</p>
+</body>
+</html>
