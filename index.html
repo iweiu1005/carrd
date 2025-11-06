@@ -69,7 +69,6 @@
         </div>
     </div>
         <script>
-            // اسکریپت اصلی تاریخ شما (دست نخورده)
             document.addEventListener("DOMContentLoaded", function () {
                 const today = new Date();
                 const formattedDate = today.getFullYear() + "." + String(today.getMonth() + 1).padStart(2, "0") + "." + String(today.getDate()).padStart(2, "0");
@@ -79,32 +78,6 @@
                     dateElement.innerHTML = `Date: ${formattedDate}`;
                 }
             });
-
-            // اسکریپت جدید برای هدایت ساب‌دامنه‌ها
-            function getSubdomain() {
-                const hostname = window.location.hostname;
-                const parts = hostname.split('.');
-                
-                // اگر ساب‌دامنه بود (مثل teddy.carrd.ir) و دامنه اصلی نبود
-                if (parts.length >= 3 && parts[0] !== 'www' && parts[0] !== 'carrd') {
-                    return parts[0];
-                }
-                return null;
-            }
-
-            function redirectFromSubdomain() {
-                const subdomain = getSubdomain();
-                const basePath = '/pages';
-                
-                if (subdomain) {
-                    // فقط اگر از ساب‌دامنه باز شده باشد، هدایت شود
-                    window.location.href = `${basePath}/${subdomain}/index.html`;
-                }
-                // اگر دامنه اصلی بود، هیچ کاری نکند و صفحه اصلی نمایش داده شود
-            }
-
-            // اجرای هدایت فقط برای ساب‌دامنه‌ها
-            window.addEventListener('load', redirectFromSubdomain);
         </script>
     </body>
 </html>
