@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // پخش صدا فقط یک بار (با sessionStorage)
     if (!sessionStorage.getItem('receiptSoundPlayed')) {
         const audio = new Audio('https://uploadkon.ir/uploads/82a606_25receipt-printer-sound.mp3');
-        audio.volume = 0.5; // ولوم ۵۰٪
         audio.currentTime = 0;
         
         audio.play().catch(e => {
