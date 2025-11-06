@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Detail for your web (name / description for preview / img for preview)  -->
+        <meta property="og:title" content="Carrd.ir" />
+        <meta property="og:image" content="/pages/teddy/teddy.jpg" />
+        <meta property="og:description" content="create aesthetic carrd for Free in carrd.ir" />
+
+        <!-- Icon for your web -->
+        <link href="/pages/teddy/teddy.png" rel="shortcut icon" />
+
+        <!-- Web Name -->
+        <title>Teddy Bear</title>
+
+        <!-- Style Link -->
+        <link rel="stylesheet" href="/receipt.css" />
+
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="card">
+            <h1>Receipt</h1>
+            <hr />
+            <div class="order-info">
+                <div class="order-left">
+                    <p>Order: #10001 </p>
+                <p class="Datep">Date: 2025.10.05</p>
+                </div>
+                <div class="website"><a href="/">carrd.ir</a></div>
+            </div>
+            <hr />
+            <div class="item-row">
+                <div class="item-left">
+                    <p>Item: teddy bear x1</p>
+                    <img src="/pages/teddy/teddy.jpg" alt="Profile" class="profile-img" />
+                </div>
+                <div class="item-right">
+                    <div class="traits">
+                        <p>
+                            * INFP <br />
+                            * Capricorn <br />
+                            * 1995 <br />
+                            <br />
+                            ( FOR MORE INFORMATION, TAP TO LINK BELOW )<br />
+                        </p>
+                        <a href="#">Link</a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="product-details">
+                <p>
+                    Product Description: Dreamy, gentle, and effortlessly elegant – made for soft soul<br />
+                    Price: Priceless<br />
+                    Item Number: #1<br />
+                    Made in: south Korea
+                </p>
+            </div>
+            <hr />
+            <div class="signature-barcode">
+                <img src="/pages/teddy/sign.png" alt="Signature" class="signature-img" />
+                <img src="/pages/teddy/brcode.jpg" alt="Barcode" class="barcode-img" />
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const today = new Date();
+                const formattedDate = today.getFullYear() + "." + String(today.getMonth() + 1).padStart(2, "0") + "." + String(today.getDate()).padStart(2, "0");
+
+                const dateElement = document.querySelector(".Datep");
+                if (dateElement) {
+                    dateElement.innerHTML = `Date: ${formattedDate}`;
+                }
+            });
+        </script>
+    </body>
+</html>
